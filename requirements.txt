@@ -3,3 +3,4 @@ uvicorn
 databases
 aiosqlite
 sqlalchemy
+pytest
