@@ -4,7 +4,7 @@ from main import app
 client = TestClient(app)
 
 def test_create_user():
-    response = client.post("/users/", json={"name": "John Doe", "email": "john@example.com"})
+    response = client.post("/users/", json={"name": "John Doe", "email": "alen@example.com"})
     assert response.status_code == 200
     assert response.json()["name"] == "John Doe"
     assert response.json()["email"] == "john@example.com"
